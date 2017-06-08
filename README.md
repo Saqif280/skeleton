@@ -1,2 +1,2 @@
 # skeleton
-Project skeleton for Web Apps
+Project skeleton for Web Apps 💀

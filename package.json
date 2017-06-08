@@ -1,0 +1,30 @@
+{
+  "name": "roastme",
+  "version": "0.0.1",
+  "description": "Roast your friends anonymously. Get roasted. Compare stats.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Saqif280/roastme.at.git"
+  },
+  "author": "Saqif Badruddin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Saqif280/roastme.at/issues"
+  },
+  "homepage": "https://github.com/Saqif280/roastme.at#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-uglify": "^3.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0",
+    "grunt-update-reference": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
+  },
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
