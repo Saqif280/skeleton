@@ -1,16 +1,16 @@
 // wrapper
 module.exports = function(grunt) {
 
-	// Project configuration.
-	grunt.initConfig({
-	  pkg: grunt.file.readJSON('package.json'),
+  // Project configuration.
+  grunt.initConfig({
+    pkg: grunt.file.readJSON('package.json'),
 
-	  /**
-	  * Grunt Sass
-	  * Compile Sass to CSS using node-sass
-	  * https://www.npmjs.com/package/grunt-sass
-	  */
-	  sass: {
+    /**
+    * Grunt Sass
+    * Compile Sass to CSS using node-sass
+    * https://www.npmjs.com/package/grunt-sass
+    */
+    sass: {
       options: {
         sourceMap: false
       },
@@ -22,15 +22,15 @@ module.exports = function(grunt) {
     },
 
     /**
-	  * Grunt Contrib Uglify
-	  * Minify JavaScript files
-	  * https://www.npmjs.com/package/grunt-contrib-uglify
-	  */
-	  uglify: {
+    * Grunt Contrib Uglify
+    * Minify JavaScript files
+    * https://www.npmjs.com/package/grunt-contrib-uglify
+    */
+    uglify: {
       my_target: {
-      	files: {
-      		'js/main.min.js': ['node_modules/jquery/dist/jquery.js','assets/js/main.js']
-      	}
+        files: {
+          'js/main.min.js': ['node_modules/jquery/dist/jquery.js','assets/js/main.js']
+        }
       }
     },
 
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         //Define what files contain some reference. 
         searchFileType: [ "*.html", "*.js", "*.css" ],
         //If has some file or path to ignore, path is base on "options.searchPathBase". 
-        searchIgnore:[ "gruntfile.js","assets" ],
+        searchIgnore:[ "gruntfile.js"],
         //Task's log, "simple", "all" or "none" 
         log:"simple"
       },
@@ -56,7 +56,7 @@ module.exports = function(grunt) {
           // referenceIgnore:["*.html"]
         },
         //What kind of files that may needed to be update references.(path is not base on "options.searchPathBase") 
-        src: [ "{js,css,img}/*.{css,js,jpg,png,gif}"]
+        src: [ "js/*.js", "css/*.css"]
       }
     },
 
@@ -71,8 +71,7 @@ module.exports = function(grunt) {
           'assets/scss/**/*.scss'
         ],
         tasks: [
-          'sass',
-          'reference'
+          'sass'
         ]
       },
       scripts: {
@@ -80,18 +79,17 @@ module.exports = function(grunt) {
           'assets/js/*.js'
         ],
         tasks: [
-          'uglify',
-          'reference'
+          'uglify'
         ]
       }
     }
-	});
+  });
 
-	// Load tall plugins for task.
-	require('load-grunt-tasks')(grunt);
+  // Load tall plugins for task.
+  require('load-grunt-tasks')(grunt);
 
-	// Default task(s).
-	grunt.registerTask('default', ['watch']);
+  // Default task(s).
+  grunt.registerTask('default', ['watch']);
 
-	// Custom task(s).
+  // Custom task(s).
 };
