@@ -1,12 +1,12 @@
 {
-  "name": "roastme",
-  "description": "Roast your friends anonymously. Get roasted. Compare stats.",
+  "name": "Skeleton",
+  "description": "Barebones project starting workflow",
   "main": "index.html",
   "authors": [
     "Saqif Badruddin"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/Saqif280/roastme.at",
+  "homepage": "https://github.com/Saqif280/skeleton",
   "ignore": [
     "**/.*",
     "node_modules",

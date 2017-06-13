@@ -1,21 +1,21 @@
 {
-  "name": "roastme",
+  "name": "Skeleton",
   "version": "0.0.1",
-  "description": "Roast your friends anonymously. Get roasted. Compare stats.",
+  "description": "Barebones project starting workflow",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Saqif280/roastme.at.git"
+    "url": "git+https://github.com/Saqif280/skeleton.git"
   },
   "author": "Saqif Badruddin",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Saqif280/roastme.at/issues"
+    "url": "https://github.com/Saqif280/skeleton/issues"
   },
-  "homepage": "https://github.com/Saqif280/roastme.at#readme",
+  "homepage": "https://github.com/Saqif280/skeleton#readme",
   "devDependencies": {
     "grunt": "^1.0.1",
     "grunt-contrib-uglify": "^3.0.1",
